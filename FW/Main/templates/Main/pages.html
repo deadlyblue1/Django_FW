@@ -1,0 +1,16 @@
+{% extends 'Main/ground.html' %}
+
+{% block title %}
+Страница Заметок
+{% endblock %}
+
+
+{%block text%}
+{% for el in page %}
+<div class = "alert alert-warning mt-2">
+     <h3>{{ el.title }}</h3>
+     <p> {{ el.text }} </p>
+</div>
+
+{% endfor %}
+{% endblock %}
